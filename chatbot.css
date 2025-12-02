@@ -1,0 +1,212 @@
+a{
+    text-decoration:none;
+}
+.navbar{
+    padding-right:15px;
+    padding-left:15px;
+}   
+.navdiv{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    
+    
+}
+.logo a{
+    font-size: 30px;
+    font-weight: 600;
+    color:#ffffff;
+}
+ul{
+    padding-left:400px
+}
+li {
+    list-style:none;
+    display:inline-block;
+    padding-left:25px;
+    
+}
+li a{
+    color:white;
+    font-size:18px;
+    font-weight:600;
+    margin-right: 100px;
+}
+.buttondiv{
+    padding-left:200px;
+}
+button{
+    background: #252525;
+    border:none;
+    border-radius: 10px;
+    margin-left:10px;
+    padding:6px;
+    width: 80px;
+}
+button a{
+    color:#ffffff
+}
+.jarvis{
+    color:#ffffff;
+    display:flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+span{
+    margin-left:10px;
+}
+.jarvis img{
+    display:block;
+    margin:0;
+    padding:0;
+    height:100px;
+    width:100px;
+}
+.topsection{
+    display:flex;
+    align-items:start; 
+}
+body{
+    /*background-color: black;*/
+    background-image:url(fightingrobonew2.png);
+    background-size:cover;
+    position:absolute;
+    
+    
+}
+.chatWindow{
+    backdrop-filter: blur(3px);
+    margin-top: 50px;
+    height: 518px;
+    width: 1150px;
+    border: 2px solid rgb(42, 42, 42);
+    margin-left: 75px;
+    overflow-y:auto;
+    border-radius: 10px;
+    
+    
+}
+
+/* Firefox */
+.chatWindow {
+    scrollbar-width: thin;
+    scrollbar-color: #35353584 rgba(0, 0, 0, 0);
+}
+
+
+.wholebox{
+    position: relative;
+    height: 70px;
+    width: 600px;
+    background-color:rgb(43, 43, 43);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 450px;
+    margin-bottom: 20px;
+}
+
+.sendbutton {
+    position: relative; 
+    height: 30px;
+    width: 30px;
+    margin-left: 550px;
+    background: transparent; 
+    border: none; 
+    padding: 0;
+    top: 10px;
+}
+
+.sendbuttonlogo {
+    position: absolute; 
+    height: 40px;
+    width: 40px;
+    top: 5px;
+    left: 0;
+}
+
+#inputbox{
+    position: absolute;
+    background-color:rgb(43, 43, 43);
+    color:white;
+    left:50px;
+    top: 15px;
+    height: 40px;
+    width: 480px;
+    border:none;
+    
+}
+.aiIcon{
+    position: absolute;
+    height: 40px;
+    top: 15px;
+    left: 5px;
+    background: transparent;
+    border-radius: 20px;
+}
+/*.aiImage{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 250px;
+    background: transparent;
+    height: 450px;
+    
+}*/
+
+.message {
+    /*background-color:white;*/
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    width: fit-content;
+}
+
+.user-message {
+    color:whitesmoke;
+    background-color: #252525;
+    align-self: flex-end;
+    margin-left: auto;
+    max-width: 40vw;
+}
+
+.ai-message {
+    color:#ffffff;
+    background-color: #252525;
+    align-self: flex-start;
+    margin-right: auto;
+    max-width: 40vw;
+}
+.resetChat{
+    position: absolute;
+    top: 10px; /* Adjust to align with the input box */
+    left: 600px; /* Position it parallel to the input box */
+    height: 53px;
+    width: 55px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+
+}
+.resetChatlogo{
+    width: 100%;
+    height:100%;
+
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.rotate {
+    animation: rotate360 0.3s linear; /* Smooth rotation in 0.5 seconds */
+}
+
+.logo{
+    text-decoration: none;
+}

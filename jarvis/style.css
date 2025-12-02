@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.main {
+  min-height: 100vh;
+  width: 100%;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  padding: 10px;
+}
+
+.image-container img {
+  width: 80%;
+  max-width: 350px;
+  height: auto;
+}
+
+.image-container h1 {
+  color: #00bcd4;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+.image-container p {
+  color: #324042;
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 400px;
+  height: 50px;
+  border-radius: 20px;
+  background: rgb(202 253 255 / 50%);
+  padding: 0 10px;
+}
+
+.input .talk {
+  background: transparent;
+  outline: none;
+  border: none;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.input .talk i {
+  font-size: 22px;
+  color: #aed0d0;
+}
+
+.input .content {
+  color: #aed0d0;
+  font-size: 15px;
+  flex: 1;
+  text-align: left;
+  padding-left: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .image-container h1 {
+    font-size: 2rem;
+  }
+  .input {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container img {
+    width: 100%;
+  }
+
+  .image-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .image-container p {
+    font-size: 0.9rem;
+  }
+
+  .input {
+    flex-direction: row;
+    height: 45px;
+    padding: 0 8px;
+  }
+
+  .input .content {
+    font-size: 0.9rem;
+    margin-right: 10px;
+  }
+}
